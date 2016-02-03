@@ -29,7 +29,7 @@ build:
     - ls -al
 
   post_ci:
-    - echo "this is post ci stage and i added reset cache"
+    - echo "this is post ci stage and i am removing reset cache"
 
 integrations:
   hub:
