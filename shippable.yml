@@ -29,7 +29,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push scriptnull/sample_node_cache
+    - echo "this is post ci stage"
 
 integrations:
   hub:
