@@ -16,10 +16,10 @@ build:
   cache: true
   
   pre_ci:
-    - docker build -t=shippabledocker/shiphitchcock1_sample_node .
+    - docker build -t=scriptnull/sample_node_cache .
 
   pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock1_sample_node
+    image_name: scriptnull/sample_node_cache
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -29,7 +29,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push shippabledocker/shiphitchcock1_sample_node
+    - docker push scriptnull/sample_node_cache
 
 integrations:
   hub:
